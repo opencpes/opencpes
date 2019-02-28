@@ -49,7 +49,7 @@ class ViewController: NSViewController {
             searching = true
             let im = NSImage(byReferencing: url)
             if (im.size.width > 0) {
-                textfield.stringValue = "⏳ Searching Chain...\n✅ Image Hashed\n⏳ Found with RSA QR Code\n⏳ Centsi Credits: ?"
+                textfield.stringValue = "⏳ Searching Chain...\n✅ Image Hashed\n⏳ Found with QR Code\n⏳ Centsi Credits: ?"
                 imageview.image = im
 
                 oq.addOperation() {
@@ -60,9 +60,9 @@ class ViewController: NSViewController {
                     task.waitUntilExit()
                     DispatchQueue.main.sync {
                         if task.terminationStatus == 0 {
-                            self.textfield.stringValue = "✅ Image Hashed\n✅ Found in Chain\n✅ RSA QR Code\n💳 ¢entsi Credits: 8"
+                            self.textfield.stringValue = "✅ Image Hashed\n✅ Found with QR Code\n💳 ¢entsi Credits: 8"
                         } else {
-                            self.textfield.stringValue = "✅ Image Hashed\n❌ Found in Chain\n❌ RSA QR Code\n❌ ¢entsi Credits: 0"
+                            self.textfield.stringValue = "✅ Image Hashed\n❌ Found with QR Code\n❌ ¢entsi Credits: 0"
                         }
                         self.searching = false
                     }
