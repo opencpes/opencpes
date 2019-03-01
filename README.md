@@ -1,4 +1,4 @@
-#About OpenCPEs
+# About OpenCPEs
 
 OpenCPEs is a special Blockchain project from the CSA acting as a ledger for CPE (Continuing Professional Education) credits and other professional development accreditation and claims.
 
@@ -6,7 +6,15 @@ OpenCPEs is a special Blockchain project from the CSA acting as a ledger for CPE
 
 The current iteration of the OpenCPEs chain is hosted on [Github](https://github.com/opencpes/opencpes-blockchain).
 
-#Simple Witnessing
+# Building
+
+Enter the `OpenCPE` folder and run:
+
+    swift build -c release
+
+The build system will report where it places the resulting binary, which you are free to move elsewhere. On macOS, depending on your system, you may need to install the homebrew version of `libressl`. MacPorts has been known to interfere with successful builds. A simple way to temporarily disable MacPorts is to rename the `/opt/local` directory (e.g. to `/opt/lcl`) and then name it back to `/opt/local` after building.
+
+# Simple Witnessing
 
 You can use the OpenCPEs chain to witness attachments to e-mails sent to [centsi@opencpes.com](mailto:centsi@opencpes.com). Keep your original file. In the case of images sent via phone it may be better to CC yourself as phones often manipulate images before transmission.
 
