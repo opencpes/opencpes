@@ -18,7 +18,7 @@ The build system will report where it places the resulting binary, which you are
 
 You can use the OpenCPEs chain to witness attachments to e-mails sent to [centsi@opencpes.com](mailto:centsi@opencpes.com). Keep your original file. In the case of images sent via phone it may be better to CC yourself as phones often manipulate images before transmission.
 
-To verify the `foo.dat` after sending, `git clone` the latest [OpenCPEs blockchain](https://github.com/opencpes/opencpes-blockchain). Determine `foo.dat`'s SHA512 sum:
+To verify `foo.dat` after sending, `git clone` the latest [OpenCPEs blockchain](https://github.com/opencpes/opencpes-blockchain). Determine `foo.dat`'s SHA512 sum:
 
     HASH=`sha512sum --tag foo.dat | sed -e 's/.* //'`
 
