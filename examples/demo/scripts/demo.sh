@@ -1,8 +1,9 @@
 #!/bin/bash
 #macos bash script
 KEY="CSA Summit 2019"
-REPO="/Users/csablockhead/Downloads/demoII/opencpes/examples/demo/scripts/opencpes-blockchain"
-OPENCPE="/Users/csablockhead/Downloads/demoII/opencpes/OpenCPE/.build/x86_64-apple-macosx10.10/release/OpenCPE"
+BASE=`echo $0 | sed -e 's/demo.sh//g'`
+REPO="$BASE/opencpes-blockchain"
+OPENCPE="$BASE/OpenCPE"
 #
 if [ $# -eq 0 ]; then
   echo "performing sync"

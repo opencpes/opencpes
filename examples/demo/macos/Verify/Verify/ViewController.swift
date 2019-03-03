@@ -22,7 +22,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var imageview: NSImageView!
     let oq = OperationQueue()
     var searching = false
-    var scriptPath = ""
+    var scriptPath = Bundle.main.url(forResource: "demo", withExtension: "sh")!.path
     
     override func viewDidLayout() {
         super.viewDidLayout()
