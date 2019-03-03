@@ -1,5 +1,5 @@
 #!/bin/bash
-KEY="CSA Summit 2019"
+KEY=""
 CUTOFF="1556200800"
 #
 BASE="/nfs-postfix/demo"
