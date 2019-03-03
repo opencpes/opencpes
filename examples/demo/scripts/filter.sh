@@ -1,5 +1,5 @@
 #!/bin/bash
-KEY=""
+KEY="CSA Summit 2019"
 CUTOFF="1556200800"
 #
 BASE="/nfs-postfix/demo"
@@ -21,12 +21,12 @@ PARTDIR=`mktemp -d --tmpdir=$BASE/parts`
 mu extract -a --target-dir=$PARTDIR $MAILFILE
 #
 for IMGFILE in $PARTDIR/*; do
-    if zbarimg $IMGFILE | grep "$KEY"; then
+    if zbarimg "$IMGFILE" | grep "$KEY"; then
         VLDFILE=`mktemp --tmpdir=$BASE/valid`
-        mv $IMGFILE $VLDFILE
+        mv "$IMGFILE" $VLDFILE
     else
         VLDFILE=`mktemp --tmpdir=$BASE/generic`
-        mv $IMGFILE $VLDFILE
+        mv "$IMGFILE" $VLDFILE
     fi
 done
 #
