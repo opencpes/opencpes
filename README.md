@@ -12,7 +12,11 @@ Enter the `OpenCPE` folder and run:
 
     swift build -c release
 
-The build system will report where it places the resulting binary, which you are free to move elsewhere. On macOS, depending on your system, you may need to install the homebrew version of `libressl`. MacPorts has been known to interfere with successful builds. A simple way to temporarily disable MacPorts is to rename the `/opt/local` directory (e.g. to `/opt/lcl`) and then name it back to `/opt/local` after building.
+The build system will report where it places the resulting binary, which you are free to move elsewhere. 
+
+On macOS, depending on your system, you may need to install the homebrew version of `libressl` via `brew install libressl`. You may also have to `sudo xcode-select -switch /Applications/Xcode.app/` depending on which version of `Xcode` you are using.
+
+MacPorts has been known to interfere with successful builds. A simple way to temporarily disable MacPorts is to rename the `/opt/local` directory (e.g. to `/opt/lcl`) and then name it back to `/opt/local` after building.
 
 # Simple Witnessing
 
