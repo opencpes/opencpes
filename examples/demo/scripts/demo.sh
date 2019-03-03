@@ -2,11 +2,14 @@
 #macos bash script
 KEY="CSA Summit 2019"
 BASE=`echo $0 | sed -e 's/demo.sh//g'`
-REPO="$BASE/opencpes-blockchain"
+NAME=`whoami`
+REPO="/Users/$NAME/Downloads/opencpes-blockchain"
 OPENCPE="$BASE/OpenCPE"
 #
 if [ $# -eq 0 ]; then
   echo "performing sync"
+  cd "/Users/$NAME/Downloads"
+  /usr/bin/git clone https://github.com/opencpes/opencpes-blockchain.git
   cd $REPO
   /usr/bin/git pull
   exit $?
