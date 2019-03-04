@@ -1,6 +1,6 @@
 # Getting verify.app to work on Mac OS
 
-Please note that at this time we only officially support the most recent version of Mac OS (10.14.3), however Verify.app should work on recent versions as well.
+Please note that at this time we only officially support the most recent release of Mac OS (10.14, Mojave). 
 
 ## Installing Swift support
 
@@ -24,10 +24,10 @@ The easiest way to ensure the PATH statement is reloaded is to simply log out an
 
 ## Downloading and installing Verify.app
 
-(https://opencpes.com/software-data-download/)[https://opencpes.com/software-data-download/]
+Verify.app is available as a zip file: (Verify.zip)[https://github.com/opencpes/opencpes/releases/download/v0.0.1/Verify.zip].
 
-No installation is needed, simply unzip the file. Please note that the Verify.app will create a local directory called opencpes-blockchain which contans a copy of the OpenCPEs Blockchain data. 
-
+No installation is needed, simply unzip the file (e.g. by double clicking on it). Please note that the Verify.app will create a local directory called opencpes-blockchain which contans a copy of the OpenCPEs Blockchain data. 
 ## Running Verify.app
 
-The binary is unsigned, you will need to allow it:
+The binary is unsigned, as such you will need to allow it in your Mac OS Security settings. Simply click on Verify.app to run it, you will receieve a warning. After the warning is presented click on "System Preferences" - "Security & Privacy" - "General" and then choose to allow the unsigned application Verify.app.
+
