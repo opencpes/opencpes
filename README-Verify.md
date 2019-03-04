@@ -30,3 +30,7 @@ No installation is needed, simply unzip the file (e.g. by double clicking on it)
 ## Running Verify.app
 
 The binary is unsigned, as such you will need to allow it in your Mac OS Security settings. Simply click on Verify.app to run it, you will receieve a warning. After the warning is presented click on "System Preferences" - "Security & Privacy" - "General" and then choose to allow the unsigned application Verify.app.
+
+![Mac OS System Preferences](/images/system-preferences.png)
+
+![Mac OS select application](/images/verify-allow.png)
