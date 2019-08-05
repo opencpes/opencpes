@@ -1,0 +1,77 @@
+{
+    "resource": "/observation",
+    "path": "/observation",
+    "httpMethod": "POST",
+    "headers": {
+        "accept": "*/*",
+        "content-type": "application/octet-stream",
+        "Host": "k39uovzd0e.execute-api.us-east-1.amazonaws.com",
+        "User-Agent": "curl/7.58.0",
+        "X-Amzn-Trace-Id": "Root=1-5d341ceb-e01b52c8bb852540b128ddb4",
+        "X-Forwarded-For": "61.69.104.66",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "accept": [
+            "*/*"
+        ],
+        "content-type": [
+            "application/octet-stream"
+        ],
+        "Host": [
+            "k39uovzd0e.execute-api.us-east-1.amazonaws.com"
+        ],
+        "User-Agent": [
+            "curl/7.58.0"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5d341ceb-e01b52c8bb852540b128ddb4"
+        ],
+        "X-Forwarded-For": [
+            "61.69.104.66"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "m87c2e",
+        "resourcePath": "/observation",
+        "httpMethod": "POST",
+        "extendedRequestId": "dKl01HuaoAMFnWQ=",
+        "requestTime": "21/Jul/2019:08:06:03 +0000",
+        "path": "/test/observation",
+        "accountId": "838087214189",
+        "protocol": "HTTP/1.1",
+        "stage": "test",
+        "domainPrefix": "k39uovzd0e",
+        "requestTimeEpoch": 1563696363725,
+        "requestId": "6277e103-ab8e-11e9-9ce4-79a1015ee328",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "61.69.104.66",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "curl/7.58.0",
+            "user": null
+        },
+        "domainName": "k39uovzd0e.execute-api.us-east-1.amazonaws.com",
+        "apiId": "k39uovzd0e"
+    },
+    "body": "9utdrCYzqacr7VhHKoaAUMNIJr0xVQ7XclWWgpRlEwuszIuzc5cafHvQGU/bOXP7q/V19VMQbh0SwmNDYD0smA==",
+    "isBase64Encoded": true
+}

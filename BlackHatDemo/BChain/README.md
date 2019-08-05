@@ -1,0 +1,3 @@
+# BChain
+
+Basic blockchain library.
