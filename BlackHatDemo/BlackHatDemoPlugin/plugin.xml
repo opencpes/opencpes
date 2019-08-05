@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.opencpes.blackhat.demo.plugin" version="0.0.1"
+xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>BlackHatDemoPlugin</name>
+  <js-module name="BlackHatDemoPlugin"
+  src="www/BlackHatDemoPlugin.js">
+    <clobbers target="cordova.plugins.BlackHatDemoPlugin" />
+  </js-module>
+  <dependency id="cordova-plugin-add-swift-support"
+  version="2.0.2" />
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="BlackHatDemoPlugin">
+        <param name="ios-package" value="BlackHatDemoPlugin" />
+      </feature>
+    </config-file>
+    <config-file target="*-Info.plist"
+    parent="UIFileSharingEnabled">
+      <true />
+    </config-file>
+    <config-file target="*-Info.plist"
+    parent="LSSupportsOpeningDocumentsInPlace">
+      <true />
+    </config-file>
+    <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+      <array>
+        <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>centsi</string>
+          </array>
+        </dict>
+      </array>
+    </config-file>
+    <framework src="Security.framework" weak="true" />
+    <source-file src="src/ios/BlackHatDemoSwift.swift" />
+    <source-file src="src/ios/BChain.swift" />
+  </platform>
+</plugin>

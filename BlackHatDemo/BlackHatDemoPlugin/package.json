@@ -1,0 +1,18 @@
+{
+  "name": "com.opencpes.blackhat.demo.plugin",
+  "version": "0.0.1",
+  "description": "Swift portion of Black Hat Demo",
+  "cordova": {
+    "id": "com.opencpes.blackhat.demo.plugin",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Trevor Jay",
+  "license": "AGPL-3.0"
+}
